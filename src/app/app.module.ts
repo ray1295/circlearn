@@ -7,12 +7,12 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { FooterComponent } from './footer/footer.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { TimerComponent } from './timer/timer.component';
-import { GradeCalculatorComponent } from './grade-calculator/grade-calculator.component';
 import { BlogComponent } from './blog/blog.component';
 import { TimetableComponent } from './timetable/timetable.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material';
+import { CalculatorComponent } from './calculator/calculator.component';
 
 
 
@@ -24,10 +24,10 @@ import { MaterialModule } from './material';
     FooterComponent,
     CalendarComponent,
     TimerComponent,
-    GradeCalculatorComponent,
     BlogComponent,
     TimetableComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    CalculatorComponent
   ],
   imports: [
     BrowserModule,

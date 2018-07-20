@@ -1,4 +1,6 @@
-<mat-toolbar color="primary">
+
+
+<mat-toolbar class="nav__background">
   <mat-toolbar-row>
     <mat-icon class="example-icon" [matMenuTriggerFor]="menu">menu</mat-icon>
     <mat-menu #menu="matMenu">
@@ -6,18 +8,19 @@
       <button mat-menu-item>Item 2</button>
     </mat-menu>
     <span>{{title}}</span>
-    <span class="example-spacer"></span>
-    <ul>
-      <li><a>Home</a></li>
-      <li><a>Calendar</a></li>
-      <li><a>Login</a></li>
-      <li><a>Sign Up</a></li>
-    </ul>
     <input aria-label="search" placeholder="Search" type="search">
+    <button mat-button>Home</button>
+    <button mat-button>Calendar</button>
+    <span class="example-spacer"></span>
+    <button class="primary--text">Login</button>
+    <button class="primary--button">Sign Up</button>
   </mat-toolbar-row>
 </mat-toolbar>
 
 
-<p>{{university}}</p>
-<button mat-button>Basic</button>
+<h1>{{university}}</h1>
+
+
 <router-outlet></router-outlet>
+
+<app-footer></app-footer>

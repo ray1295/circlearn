@@ -9,3 +9,5 @@ export class AppComponent {
   title = 'Circlearn';
   university = ['Lancaster', 'Glasgow', 'Surrey', 'Oxford'];
 }
+
+
