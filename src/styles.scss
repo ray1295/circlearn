@@ -1,15 +1,45 @@
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "stylesheets/modules/colors";
+@import "stylesheets/partials/typography";
 
-html,
+html, body {
+  height: 100%;
+}
+
+html {
+  display: block;
+}
+
 body {
-  font-family: helvetica neue,Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.42857143;
-  color: #333;
+  @extend %font-shared;
   background-color: #f9f9f9;
   padding: 0;
   margin: 0 auto;
 }
+
+// Nesting ul, li, and a selectors inside the nav selector
+.nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {display: inline-block;}
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+
+//Placeholder, extend, inheritance
+%button-shared {
+  border: 1px solid #333333;
+  color: $color-primary;
+}
+
 
 .nav__background {
 background: #ffffff !important;

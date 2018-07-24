@@ -1,0 +1,59 @@
+h1, h2, h3, h4, h5, h6, .subheading, .button, .success, .warning, .disabled, .primary, .info, .bright {
+  font: Normal Normal 600 14px/150% Arial, Helvetica, sans-serif;
+  margin: 0 0 .5em 0;
+  letter-spacing: -.02em;
+  color: #333333; }
+
+.subheading {
+  color: #D3D3D3; }
+
+.button, .success, .warning, .disabled, .primary, .info, .bright {
+  background: transparent;
+  border: 2px solid #333333;
+  border-radius: 42px;
+  color: #333333;
+  padding: 6px 24px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer; }
+
+.button {
+  transition: all .1s ease-in-out; }
+
+.button:active {
+  transform: scale(1.05); }
+
+.success {
+  border-color: #1dca7f;
+  color: #1dca7f; }
+
+.warning {
+  border-color: #ff3165;
+  color: #ff3165; }
+
+.disabled {
+  border-color: #D3D3D3;
+  color: #D3D3D3; }
+
+.primary {
+  border-color: #4f45aa;
+  color: #4f45aa; }
+
+.info {
+  border-color: #4f87ec;
+  color: #4f87ec; }
+
+.bright {
+  border-color: #ffc927;
+  color: #ffc927; }
+
+h1, h2, h3, h4, h5, h6, .subheading, .button, .success, .warning, .disabled, .primary, .info, .bright {
+  font: Normal Normal 600 14px/150% Arial, Helvetica, sans-serif;
+  margin: 0 0 .5em 0;
+  letter-spacing: -.02em;
+  color: #333333; }
+
+.subheading {
+  color: #D3D3D3; }
+
+/*# sourceMappingURL=app.component.css.map */

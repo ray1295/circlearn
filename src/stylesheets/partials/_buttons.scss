@@ -1,0 +1,74 @@
+@import "../modules/colors";
+@import "typography";
+
+// Using Placeholder, Extends, and Inheritance
+
+%button-shared{
+  @extend %font-shared;
+  background: transparent;
+  border: 2px solid $text-color;
+  border-radius: 42px;
+  color: $text-color;
+  padding: 6px 24px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+%grow { transition: all .1s ease-in-out; }
+
+.button {
+  @extend %button-shared;
+  @extend %grow;
+}
+
+// Using mixin to add animation to buttons
+
+@mixin transform($property) {
+  transform: $property;
+}
+
+.button {
+  &:hover{}
+  &:active{
+    @include transform(scale(1.05));
+  }
+}
+
+// Button modifiers classes
+
+.success {
+  @extend %button-shared;
+  border-color: $color-go;
+  color: $color-go;
+}
+
+.warning {
+  @extend %button-shared;
+  border-color: $color-destructive;
+  color: $color-destructive;
+}
+
+.disabled {
+  @extend %button-shared;
+  border-color: $color-less;
+  color: $color-less;
+}
+
+.primary {
+  @extend %button-shared;
+  border-color: $color-primary;
+  color: $color-primary;
+}
+
+.info {
+  @extend %button-shared ;
+  border-color: $color-info;
+  color: $color-info;
+}
+
+.bright {
+  @extend %button-shared;
+  border-color: $color-bright;
+  color: $color-bright;
+}

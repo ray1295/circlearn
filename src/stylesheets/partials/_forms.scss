@@ -1,0 +1,30 @@
+@import "../modules/colors";
+@import "buttons";
+@import "typography";
+
+%input-shared {
+  background: transparent;
+  border: 1px solid $color-less;
+  color: $color-less;
+  padding: 10px 20px;
+}
+
+.input--inactive {
+  @extend %input-shared;
+}
+
+.input--active {
+  @extend %input-shared;
+  border: 1px solid $color-primary;
+}
+
+.input--error {
+  @extend %input-shared;
+  border: 1px solid $color-destructive;
+}
+
+.input--disabled {
+  @extend %input-shared;
+  border: 1px solid $color-disabled;
+  background-color: $color-less;
+}
