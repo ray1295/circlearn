@@ -11,70 +11,10 @@ html {
 
 body {
   @extend %font-shared;
-  background-color: #f9f9f9;
+  font-size: 14px;
+  background-color: $background-color;
   padding: 0;
   margin: 0 auto;
-}
-
-// Nesting ul, li, and a selectors inside the nav selector
-.nav {
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  li {display: inline-block;}
-
-  a {
-    display: block;
-    padding: 6px 12px;
-    text-decoration: none;
-  }
-}
-
-
-//Placeholder, extend, inheritance
-%button-shared {
-  border: 1px solid #333333;
-  color: $color-primary;
-}
-
-
-.nav__background {
-background: #ffffff !important;
-}
-
-.primary--button {
-  color: #fff;
-  background-color: #00aeef;
-  border-radius: 50px;
-  margin-left: 20px;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-}
-
-.primary--text {
-  color: #00aeef;
-}
-
-.example-icon {
-  padding: 0 14px;
-  cursor: pointer;
-}
-
-.example-spacer {
-  flex: 1 1 auto;
-}
-
-.example-button-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.example-button-row button,
-.example-button-row a {
-  margin-right: 8px;
+  display: block;
+  color: $text-color;
 }

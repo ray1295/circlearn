@@ -1,12 +1,14 @@
 @import "../modules/colors";
 @import "buttons";
 @import "typography";
+@import "reset";
 
 %input-shared {
+  @extend %font-shared;
   background: transparent;
-  border: 1px solid $color-less;
-  color: $color-less;
-  padding: 10px 20px;
+  border: 2px solid $color-less;
+  border-radius: 42px;
+  padding: 6px 12px;
 }
 
 .input--inactive {
@@ -15,16 +17,20 @@
 
 .input--active {
   @extend %input-shared;
-  border: 1px solid $color-primary;
+  border-color: $color-primary;
 }
 
 .input--error {
   @extend %input-shared;
-  border: 1px solid $color-destructive;
+  border-color: $color-destructive;
 }
 
 .input--disabled {
   @extend %input-shared;
-  border: 1px solid $color-disabled;
+  border-color: $color-less;
   background-color: $color-less;
+}
+
+.input--button[type="button"] {
+  @extend %button-shared;
 }

@@ -1,25 +1,47 @@
 @import "../modules/colors";
 @import "typography";
+@import "reset";
 
 // Using Placeholder, Extends, and Inheritance
 
+%grow { transition: all .1s ease-in-out; }
+
 %button-shared{
   @extend %font-shared;
+  @extend %grow;
   background: transparent;
   border: 2px solid $text-color;
   border-radius: 42px;
   color: $text-color;
   padding: 6px 24px;
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
   cursor: pointer;
 }
 
-%grow { transition: all .1s ease-in-out; }
+.button__icon {
+  border: 2px solid $color-primary;
+  color: $color-primary;
+  border-radius: 50%;
+  padding: 2px;
+  font-size: 20px;
+  display: inline-flex;
+  justify-content: center;
+  line-height: 24px;
+  cursor: pointer;
+}
 
-.button {
+.button--borderless {
+  border: none;
+  padding: 6px;
+  min-width: 80px;
+  color: $color-primary;
+}
+
+button {
   @extend %button-shared;
-  @extend %grow;
 }
 
 // Using mixin to add animation to buttons
@@ -28,7 +50,7 @@
   transform: $property;
 }
 
-.button {
+button {
   &:hover{}
   &:active{
     @include transform(scale(1.05));

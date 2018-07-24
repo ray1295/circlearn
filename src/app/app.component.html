@@ -1,12 +1,20 @@
 <app-navigation></app-navigation>
 
 <h1>{{university}}</h1>
-<button class=" button sucdess ">Button</button>
-<button class=" button warning ">Button</button>
-<button class=" button disabled ">Button</button>
-<button class=" button primary ">Button</button>
-<button class=" button bright ">Button</button>
-<button class=" button info ">Button</button>
+<button class=" success ">Button</button>
+<button class=" warning ">Button</button>
+<button class=" disabled ">Button</button>
+<button class=" primary ">Button</button>
+<button class=" bright ">Button</button>
+<button class=" info ">Button</button>
+
+<br>
+
+<input class="input--active" aria-label="search" placeholder="Search" type="search">
+<input class="input--inactive" aria-label="inactive" placeholder="Search" type="text">
+<input class="input--disabled" aria-label="disabled" placeholder="Can't touch this" type="text">
+<input class="input--error" aria-label="error" placeholder="This is an error explanation" type="text">
+<input class="input--button" value="button" type="button">
 
 <router-outlet></router-outlet>
 <app-footer></app-footer>
