@@ -11,18 +11,14 @@
 ul,
 ol {
   margin: 0;
-  padding: 0; }
-
-input, textarea, select, button {
-  outline: none; }
-
-ul {
-  margin: 0;
   padding: 0;
   list-style: none; }
 
 li {
   display: inline-block; }
+
+input, textarea, select, button {
+  outline: none; }
 
 a {
   display: block;
@@ -48,18 +44,14 @@ a {
 ul,
 ol {
   margin: 0;
-  padding: 0; }
-
-input, textarea, select, button {
-  outline: none; }
-
-ul {
-  margin: 0;
   padding: 0;
   list-style: none; }
 
 li {
   display: inline-block; }
+
+input, textarea, select, button {
+  outline: none; }
 
 a {
   display: block;
