@@ -18,20 +18,23 @@ li {
 input, textarea, select, button {
   outline: none; }
 
-a {
+a,
+a:hover,
+a:active {
   display: block;
   padding: 6px 12px;
-  text-decoration: none; }
+  text-decoration: none !important; }
 
 button, .success, .warning, .disabled, .primary, .info, .bright, .input--button[type="button"] {
   transition: all .1s ease-in-out; }
 
 button, .success, .warning, .disabled, .primary, .info, .bright, .input--button[type="button"] {
   background: transparent;
-  border: 2px solid #333333;
+  color: #4f45aa;
+  border: none;
   border-radius: 42px;
-  color: #333333;
-  padding: 6px 24px;
+  padding: 6px;
+  min-width: 80px;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -49,38 +52,32 @@ button, .success, .warning, .disabled, .primary, .info, .bright, .input--button[
   line-height: 24px;
   cursor: pointer; }
 
-.button--borderless {
-  border: none;
-  padding: 6px;
-  min-width: 80px;
-  color: #4f45aa; }
-
 button:active {
   transform: scale(1.05); }
 
 .success {
-  border-color: #1dca7f;
-  color: #1dca7f; }
+  background-color: #1dca7f;
+  color: #FFFFFF; }
 
 .warning {
-  border-color: #ff3165;
-  color: #ff3165; }
+  background-color: #ff3165;
+  color: #FFFFFF; }
 
 .disabled {
-  border-color: #D3D3D3;
-  color: #D3D3D3; }
+  background-color: #D3D3D3;
+  color: #FFFFFF; }
 
 .primary {
-  border-color: #4f45aa;
-  color: #4f45aa; }
+  background-color: #4f45aa;
+  color: #FFFFFF; }
 
 .info {
-  border-color: #4f87ec;
-  color: #4f87ec; }
+  background-color: #4f87ec;
+  color: #FFFFFF; }
 
 .bright {
-  border-color: #ffc927;
-  color: #ffc927; }
+  background-color: #ffc927;
+  color: #FFFFFF; }
 
 .subheading, button, .success, .warning, .disabled, .primary, .info, .bright, .input--button[type="button"], .input--inactive, .input--active, .input--error, .input--disabled {
   font: Normal Normal 400 14px/150% 'Roboto', sans-serif;
@@ -102,20 +99,23 @@ li {
 input, textarea, select, button {
   outline: none; }
 
-a {
+a,
+a:hover,
+a:active {
   display: block;
   padding: 6px 12px;
-  text-decoration: none; }
+  text-decoration: none !important; }
 
 button, .success, .warning, .disabled, .primary, .info, .bright, .input--button[type="button"] {
   transition: all .1s ease-in-out; }
 
 button, .success, .warning, .disabled, .primary, .info, .bright, .input--button[type="button"] {
   background: transparent;
-  border: 2px solid #333333;
+  color: #4f45aa;
+  border: none;
   border-radius: 42px;
-  color: #333333;
-  padding: 6px 24px;
+  padding: 6px;
+  min-width: 80px;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -133,38 +133,32 @@ button, .success, .warning, .disabled, .primary, .info, .bright, .input--button[
   line-height: 24px;
   cursor: pointer; }
 
-.button--borderless {
-  border: none;
-  padding: 6px;
-  min-width: 80px;
-  color: #4f45aa; }
-
 button:active {
   transform: scale(1.05); }
 
 .success {
-  border-color: #1dca7f;
-  color: #1dca7f; }
+  background-color: #1dca7f;
+  color: #FFFFFF; }
 
 .warning {
-  border-color: #ff3165;
-  color: #ff3165; }
+  background-color: #ff3165;
+  color: #FFFFFF; }
 
 .disabled {
-  border-color: #D3D3D3;
-  color: #D3D3D3; }
+  background-color: #D3D3D3;
+  color: #FFFFFF; }
 
 .primary {
-  border-color: #4f45aa;
-  color: #4f45aa; }
+  background-color: #4f45aa;
+  color: #FFFFFF; }
 
 .info {
-  border-color: #4f87ec;
-  color: #4f87ec; }
+  background-color: #4f87ec;
+  color: #FFFFFF; }
 
 .bright {
-  border-color: #ffc927;
-  color: #ffc927; }
+  background-color: #ffc927;
+  color: #FFFFFF; }
 
 .subheading, button, .success, .warning, .disabled, .primary, .info, .bright, .input--button[type="button"], .input--inactive, .input--active, .input--error, .input--disabled {
   font: Normal Normal 400 14px/150% 'Roboto', sans-serif;
@@ -186,10 +180,12 @@ li {
 input, textarea, select, button {
   outline: none; }
 
-a {
+a,
+a:hover,
+a:active {
   display: block;
   padding: 6px 12px;
-  text-decoration: none; }
+  text-decoration: none !important; }
 
 .input--inactive, .input--active, .input--error, .input--disabled {
   background: transparent;
@@ -214,6 +210,25 @@ a {
 
 .subheading {
   color: #D3D3D3; }
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+li {
+  display: inline-block; }
+
+input, textarea, select, button {
+  outline: none; }
+
+a,
+a:hover,
+a:active {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none !important; }
 
 .spacer {
   flex: 1 1 auto; }

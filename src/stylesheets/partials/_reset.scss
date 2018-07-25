@@ -8,12 +8,15 @@ ol {
 }
 
 li {display: inline-block;}
+
 input, textarea, select, button {
   outline: none;
 }
 
-a {
+a,
+a:hover,
+a:active {
   display: block;
   padding: 6px 12px;
-  text-decoration: none;
+  text-decoration: none!important;
 }

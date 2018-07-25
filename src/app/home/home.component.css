@@ -87,6 +87,41 @@ button:active {
 .subheading {
   color: #D3D3D3; }
 
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+li {
+  display: inline-block; }
+
+input, textarea, select, button {
+  outline: none; }
+
+a,
+a:hover,
+a:active {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none !important; }
+
+.input--inactive, .input--active, .input--error, .input--disabled {
+  background: transparent;
+  border: 2px solid #D3D3D3;
+  border-radius: 42px;
+  padding: 6px 12px; }
+
+.input--active {
+  border-color: #4f45aa; }
+
+.input--error {
+  border-color: #ff3165; }
+
+.input--disabled {
+  border-color: #D3D3D3;
+  background-color: #D3D3D3; }
+
 .subheading, button, .success, .warning, .disabled, .primary, .info, .bright, .input--button[type="button"], .input--inactive, .input--active, .input--error, .input--disabled {
   font: Normal Normal 400 14px/150% 'Roboto', sans-serif;
   margin: 0;
@@ -168,14 +203,6 @@ button:active {
   background-color: #ffc927;
   color: #FFFFFF; }
 
-.subheading, button, .success, .warning, .disabled, .primary, .info, .bright, .input--button[type="button"], .input--inactive, .input--active, .input--error, .input--disabled {
-  font: Normal Normal 400 14px/150% 'Roboto', sans-serif;
-  margin: 0;
-  letter-spacing: -.02em; }
-
-.subheading {
-  color: #D3D3D3; }
-
 ul,
 ol {
   margin: 0;
@@ -195,20 +222,10 @@ a:active {
   padding: 6px 12px;
   text-decoration: none !important; }
 
-.input--inactive, .input--active, .input--error, .input--disabled {
-  background: transparent;
-  border: 2px solid #D3D3D3;
-  border-radius: 42px;
-  padding: 6px 12px; }
+.container h2 {
+  color: #FFFFFF; }
 
-.input--active {
-  border-color: #4f45aa; }
+.heading-fancy {
+  background-color: #4f45aa; }
 
-.input--error {
-  border-color: #ff3165; }
-
-.input--disabled {
-  border-color: #D3D3D3;
-  background-color: #D3D3D3; }
-
-/*# sourceMappingURL=app.component.css.map */
+/*# sourceMappingURL=home.component.css.map */

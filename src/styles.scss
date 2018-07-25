@@ -1,5 +1,7 @@
 @import "stylesheets/modules/colors";
+@import "stylesheets/modules/all";
 @import "stylesheets/partials/typography";
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
 
 html, body {
   height: 100%;

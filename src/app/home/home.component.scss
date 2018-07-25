@@ -1,0 +1,18 @@
+// Modules
+@import "../../stylesheets/modules/colors";
+
+// Partials
+@import "../../stylesheets/partials/forms";
+@import "../../stylesheets/partials/buttons";
+@import "../../stylesheets/partials/reset";
+
+// Styles
+
+
+.container h2 {
+  color: $color-white;
+}
+
+.heading-fancy {
+  background-color: $color-primary;
+}

@@ -1,4 +1,128 @@
-.subheading, body {
+/* Sass code that doesn't cause sass to output css
+   i.e. mixin declarations, functions and variables
+ */
+@import url(../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css);
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+li {
+  display: inline-block; }
+
+input, textarea, select, button {
+  outline: none; }
+
+a,
+a:hover,
+a:active {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none !important; }
+
+.subheading, button, .success, .warning, .disabled, .primary, .info, .bright, body {
+  font: Normal Normal 400 14px/150% 'Roboto', sans-serif;
+  margin: 0;
+  letter-spacing: -.02em; }
+
+.subheading {
+  color: #D3D3D3; }
+
+.subheading, button, .success, .warning, .disabled, .primary, .info, .bright, body {
+  font: Normal Normal 400 14px/150% 'Roboto', sans-serif;
+  margin: 0;
+  letter-spacing: -.02em; }
+
+.subheading {
+  color: #D3D3D3; }
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+li {
+  display: inline-block; }
+
+input, textarea, select, button {
+  outline: none; }
+
+a,
+a:hover,
+a:active {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none !important; }
+
+button, .success, .warning, .disabled, .primary, .info, .bright {
+  transition: all .1s ease-in-out; }
+
+button, .success, .warning, .disabled, .primary, .info, .bright {
+  background: transparent;
+  color: #4f45aa;
+  border: none;
+  border-radius: 42px;
+  padding: 6px;
+  min-width: 80px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer; }
+
+.button__icon {
+  border: 2px solid #4f45aa;
+  color: #4f45aa;
+  border-radius: 50%;
+  padding: 2px;
+  font-size: 20px;
+  display: inline-flex;
+  justify-content: center;
+  line-height: 24px;
+  cursor: pointer; }
+
+button:active {
+  transform: scale(1.05); }
+
+.success {
+  background-color: #1dca7f;
+  color: #FFFFFF; }
+
+.warning {
+  background-color: #ff3165;
+  color: #FFFFFF; }
+
+.disabled {
+  background-color: #D3D3D3;
+  color: #FFFFFF; }
+
+.primary {
+  background-color: #4f45aa;
+  color: #FFFFFF; }
+
+.info {
+  background-color: #4f87ec;
+  color: #FFFFFF; }
+
+.bright {
+  background-color: #ffc927;
+  color: #FFFFFF; }
+
+.wrap {
+  padding: 2em;
+  display: block; }
+
+.container {
+  background-color: #edecf6;
+  display: grid;
+  grid-template-columns: 50% auto; }
+
+.col {
+  padding: .4em 1.3em; }
+
+.subheading, button, .success, .warning, .disabled, .primary, .info, .bright, body {
   font: Normal Normal 400 14px/150% 'Roboto', sans-serif;
   margin: 0;
   letter-spacing: -.02em; }

@@ -10,10 +10,11 @@
   @extend %font-shared;
   @extend %grow;
   background: transparent;
-  border: 2px solid $text-color;
+  color: $color-primary;
+  border: none;
   border-radius: 42px;
-  color: $text-color;
-  padding: 6px 24px;
+  padding: 6px;
+  min-width: 80px;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -31,13 +32,6 @@
   justify-content: center;
   line-height: 24px;
   cursor: pointer;
-}
-
-.button--borderless {
-  border: none;
-  padding: 6px;
-  min-width: 80px;
-  color: $color-primary;
 }
 
 button {
@@ -61,36 +55,36 @@ button {
 
 .success {
   @extend %button-shared;
-  border-color: $color-go;
-  color: $color-go;
+  background-color: $color-go;
+  color: $color-white;
 }
 
 .warning {
   @extend %button-shared;
-  border-color: $color-destructive;
-  color: $color-destructive;
+  background-color: $color-destructive;
+  color: $color-white;
 }
 
 .disabled {
   @extend %button-shared;
-  border-color: $color-less;
-  color: $color-less;
+  background-color: $color-less;
+  color: $color-white;
 }
 
 .primary {
   @extend %button-shared;
-  border-color: $color-primary;
-  color: $color-primary;
+  background-color: $color-primary;
+  color: $color-white;
 }
 
 .info {
   @extend %button-shared ;
-  border-color: $color-info;
-  color: $color-info;
+  background-color: $color-info;
+  color: $color-white;
 }
 
 .bright {
   @extend %button-shared;
-  border-color: $color-bright;
-  color: $color-bright;
+  background-color: $color-bright;
+  color: $color-white;
 }

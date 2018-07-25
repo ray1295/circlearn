@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
@@ -13,7 +14,10 @@ import { ProjectsComponent } from './projects/projects.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material';
 import { CalculatorComponent } from './calculator/calculator.component';
-
+import { GradeComponent } from './grade/grade.component';
+import { DataService } from './data.service';
+import { ProfileComponent } from './profile/profile.component';
+import { HomeComponent } from './home/home.component';
 
 
 // @NgModule decorator with its metadata
@@ -27,15 +31,19 @@ import { CalculatorComponent } from './calculator/calculator.component';
     BlogComponent,
     TimetableComponent,
     ProjectsComponent,
-    CalculatorComponent
+    CalculatorComponent,
+    GradeComponent,
+    ProfileComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
