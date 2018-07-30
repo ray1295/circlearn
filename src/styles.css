@@ -21,7 +21,7 @@ a:active {
   padding: 6px 12px;
   text-decoration: none !important; }
 
-.subheading, button, .success, .warning, .disabled, .primary, .info, .bright, body {
+.subheading, button, .success, .warning, .disabled, .info, .bright, body {
   font: Normal Normal 400 14px/150% 'Roboto', sans-serif;
   margin: 0;
   letter-spacing: -.02em; }
@@ -29,7 +29,7 @@ a:active {
 .subheading {
   color: #D3D3D3; }
 
-.subheading, button, .success, .warning, .disabled, .primary, .info, .bright, body {
+.subheading, button, .success, .warning, .disabled, .info, .bright, body {
   font: Normal Normal 400 14px/150% 'Roboto', sans-serif;
   margin: 0;
   letter-spacing: -.02em; }
@@ -56,12 +56,12 @@ a:active {
   padding: 6px 12px;
   text-decoration: none !important; }
 
-button, .success, .warning, .disabled, .primary, .info, .bright {
+button, .success, .warning, .disabled, .info, .bright {
   transition: all .1s ease-in-out; }
 
-button, .success, .warning, .disabled, .primary, .info, .bright {
-  background: transparent;
-  color: #4f45aa;
+button, .success, .warning, .disabled, .info, .bright {
+  background: #4f45aa;
+  color: #FFFFFF;
   border: none;
   border-radius: 42px;
   padding: 6px;
@@ -98,10 +98,6 @@ button:active {
   background-color: #D3D3D3;
   color: #FFFFFF; }
 
-.primary {
-  background-color: #4f45aa;
-  color: #FFFFFF; }
-
 .info {
   background-color: #4f87ec;
   color: #FFFFFF; }
@@ -122,7 +118,7 @@ button:active {
 .col {
   padding: .4em 1.3em; }
 
-.subheading, button, .success, .warning, .disabled, .primary, .info, .bright, body {
+.subheading, button, .success, .warning, .disabled, .info, .bright, body {
   font: Normal Normal 400 14px/150% 'Roboto', sans-serif;
   margin: 0;
   letter-spacing: -.02em; }

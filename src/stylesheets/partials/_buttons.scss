@@ -9,8 +9,8 @@
 %button-shared{
   @extend %font-shared;
   @extend %grow;
-  background: transparent;
-  color: $color-primary;
+  background: $color-primary;
+  color: $color-white;
   border: none;
   border-radius: 42px;
   padding: 6px;
@@ -22,7 +22,7 @@
   cursor: pointer;
 }
 
-.button__icon {
+.button__icon{
   border: 2px solid $color-primary;
   color: $color-primary;
   border-radius: 50%;
@@ -68,12 +68,6 @@ button {
 .disabled {
   @extend %button-shared;
   background-color: $color-less;
-  color: $color-white;
-}
-
-.primary {
-  @extend %button-shared;
-  background-color: $color-primary;
   color: $color-white;
 }
 
