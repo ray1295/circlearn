@@ -18,6 +18,8 @@ import { GradeComponent } from './grade/grade.component';
 import { DataService } from './data.service';
 import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
+import { LoginFormComponent } from './login-form/login-form.component';
+import { RegisterFormComponent } from './register-form/register-form.component';
 
 
 // @NgModule decorator with its metadata
@@ -34,7 +36,9 @@ import { HomeComponent } from './home/home.component';
     CalculatorComponent,
     GradeComponent,
     ProfileComponent,
-    HomeComponent
+    HomeComponent,
+    LoginFormComponent,
+    RegisterFormComponent
   ],
   imports: [
     BrowserModule,

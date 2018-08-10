@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'app-timetable',
@@ -10,6 +11,6 @@ export class TimetableComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  }
 
+  }
 }
