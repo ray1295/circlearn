@@ -1,37 +1,37 @@
-<form [formGroup]="loginForm" (ngSubmit)="login()">
+<div class="auth-form">
 
-  <div>
-    <label for="username">username</label>
+  <div class="auth-form--header">
+    <img class="auth-form--img" src="../../images/circlearn_logo.png">
+    <h2>Sign in to CircLearn</h2>
+  </div>
 
+  <form class="auth-form--body" [formGroup]="loginForm" (ngSubmit)="login()">
+
+    <label for="username">Username or email address</label>
     <input type="text" name="username" id="username" [formControl]="username">
 
     <div [hidden]="username.valid || username.untouched">
-      <div>
-        The following problems have been found with the username:
-      </div>
-
-      <div [hidden]="!username.hasError('minlength')">
-        Username can not be shorter than 5 characters.
-      </div>
-      <div [hidden]="!username.hasError('required')">
-        Username is required.
-      </div>
+      <div>The following problems have been found with the username:</div>
+      <div [hidden]="!username.hasError('minlength')"> Username can not be shorter than 5 characters.</div>
+      <div [hidden]="!username.hasError('required')"> Username is required. </div>
     </div>
-  </div>
-  <div >
-    <label for="password">password</label>
+
+    <br>
+
+    <label for="password">Password <a href="">Forgot password?</a></label>
     <input type="password" name="password" id="password" [formControl]="password">
 
     <div [hidden]="password.valid || password.untouched">
-      <div>
-        The following problems have been found with the password:
-      </div>
-
-      <div [hidden]="!password.hasError('required')">
-        The password is required.
-      </div>
+      <div>The following problems have been found with the password:</div>
+      <div [hidden]="!password.hasError('required')">The password is required.</div>
     </div>
-  </div>
 
-  <button type="submit" [disabled]="!loginForm.valid">Log In</button>
-</form>
+    <br>
+
+    <button type="submit" [disabled]="!loginForm.valid">Sign in</button>
+
+  </form>
+
+  <p class="create-acc">New to CircLearn?<a href="">Create an account</a>.</p>
+
+</div>

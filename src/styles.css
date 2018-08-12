@@ -1,41 +1,17 @@
-/* Sass code that doesn't cause sass to output css
-   i.e. mixin declarations, functions and variables
- */
+/* Primary Sass file */
+/* Sass code that doesn't cause sass to output css i.e. mixin declarations, functions and variables */
 @import url(../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css);
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
+.wrap {
+  padding: 2em;
+  display: block; }
 
-li {
-  display: inline-block; }
+.container {
+  background-color: #f9f9f9;
+  display: grid;
+  grid-template-columns: 50% auto; }
 
-input, textarea, select, button {
-  outline: none; }
-
-a,
-a:hover,
-a:active {
-  display: block;
-  padding: 6px 12px;
-  text-decoration: none !important; }
-
-.subheading, button, .success, .warning, .disabled, .info, .bright, body {
-  font: Normal Normal 400 14px/150% 'Roboto', sans-serif;
-  margin: 0;
-  letter-spacing: -.02em; }
-
-.subheading {
-  color: #D3D3D3; }
-
-.subheading, button, .success, .warning, .disabled, .info, .bright, body {
-  font: Normal Normal 400 14px/150% 'Roboto', sans-serif;
-  margin: 0;
-  letter-spacing: -.02em; }
-
-.subheading {
-  color: #D3D3D3; }
+.col {
+  padding: .4em 1.3em; }
 
 ul,
 ol {
@@ -52,9 +28,69 @@ input, textarea, select, button {
 a,
 a:hover,
 a:active {
-  display: block;
-  padding: 6px 12px;
+  display: inline-block;
+  padding: 6px;
   text-decoration: none !important; }
+
+.subheading, button, .success, .warning, .disabled, .info, .bright, .auth-form--body input, body {
+  font: Normal Normal 400 14px/150% 'Roboto', sans-serif;
+  letter-spacing: -.02em;
+  text-decoration: none;
+  text-align: left;
+  color: #333333;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+h1, .h1 {
+  color: #4f45aa; }
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  margin: 0; }
+
+p {
+  margin: 0;
+  display: inline-block; }
+
+@media only screen and (min-width: 320px) {
+  h1, .h1 {
+    font-size: 2rem; }
+
+  h2, .h2 {
+    font-size: 1.5rem; }
+
+  h3, .h3 {
+    font-size: 1.25rem; }
+
+  h4, .h4 {
+    font-size: 1rem; }
+
+  h5, .h5 {
+    font-size: .75rem; }
+
+  h6, .h6 {
+    font-size: .5rem; } }
+@media only screen and (min-width: 600px) {
+  h1, .h1 {
+    font-size: 2.25rem; }
+
+  h2, .h2 {
+    font-size: 1.75rem; }
+
+  h3, .h3 {
+    font-size: 1.5rem; }
+
+  h4, .h4 {
+    font-size: 1.25rem; }
+
+  h5, .h5 {
+    font-size: 1rem; }
+
+  h6, .h6 {
+    font-size: .75rem; } }
+.subheading {
+  color: #D3D3D3; }
 
 button, .success, .warning, .disabled, .info, .bright {
   transition: all .1s ease-in-out; }
@@ -106,38 +142,96 @@ button:active {
   background-color: #ffc927;
   color: #FFFFFF; }
 
+.auth-form--body input {
+  background: transparent;
+  border: 1px solid #D3D3D3;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  min-height: 34px;
+  padding: 6px 8px;
+  vertical-align: middle;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 2px rgba(27, 31, 35, 0.075); }
+
+.auth-form {
+  width: 340px;
+  margin: 0 auto; }
+
+.auth-form--header {
+  text-align: center;
+  margin-bottom: 32px; }
+
+.auth-form--img {
+  width: 48px;
+  height: 48px;
+  margin: 32px 0 24px 0; }
+
+.auth-form--body {
+  display: block;
+  background-color: #FFFFFF;
+  border: 1px solid #D3D3D3;
+  border-radius: 5px;
+  padding: 20px; }
+
+.auth-form--body label {
+  display: block;
+  margin-bottom: 7px; }
+
+input[type="text"]:valid {
+  border-color: #1dca7f; }
+
+input[type="text"]:invalid {
+  border-color: #ff3165; }
+
+/* field value is valid */
+/* field value is invalid */
+/* field has not been clicked in, tapped on, or tabbed over */
+/* field has been previously entered */
+/* field value is unchanged from the default value */
+/* field value has been modified from the default */
+/* field has been unvisited and unchanged */
+/* field has been previously visited, and is invalid */
+/* Break down CSS into parts
+   i.e. typography, text boxes, etc
+*/
+/* Base stylesheet used to set up global variables
+   and load up all sass modules
+*/
+/* Sass code that doesn't cause sass to output css i.e. mixin declarations, functions and variables */
 .wrap {
   padding: 2em;
   display: block; }
 
 .container {
-  background-color: #edecf6;
+  background-color: #f9f9f9;
   display: grid;
   grid-template-columns: 50% auto; }
 
 .col {
   padding: .4em 1.3em; }
 
-.subheading, button, .success, .warning, .disabled, .info, .bright, body {
-  font: Normal Normal 400 14px/150% 'Roboto', sans-serif;
-  margin: 0;
-  letter-spacing: -.02em; }
-
-.subheading {
-  color: #D3D3D3; }
+.create-acc {
+  margin-top: 16px;
+  border: 1px solid #D3D3D3;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  display: block; }
 
 html, body {
-  height: 100%; }
-
-html {
+  height: 100%;
   display: block; }
 
 body {
   font-size: 14px;
-  background-color: #fafafa;
+  background-color: #f9f9f9;
   padding: 0;
   margin: 0 auto;
   display: block;
   color: #333333; }
+
+* {
+  box-sizing: border-box; }
 
 /*# sourceMappingURL=styles.css.map */

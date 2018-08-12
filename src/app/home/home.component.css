@@ -1,223 +1,35 @@
-.subheading, button, .success, .warning, .disabled, .info, .bright, .input--button[type="button"], .input--inactive, .input--active, .input--error, .input--disabled {
-  font: Normal Normal 400 14px/150% 'Roboto', sans-serif;
-  margin: 0;
-  letter-spacing: -.02em; }
+/*
+Sass::SyntaxError: "%input-shared" failed to @extend "%font-shared".
+The selector "%font-shared" was not found.
+Use "@extend %font-shared !optional" if the extend should be able to fail.
 
-.subheading {
-  color: #D3D3D3; }
 
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-
-li {
-  display: inline-block; }
-
-input, textarea, select, button {
-  outline: none; }
-
-a,
-a:hover,
-a:active {
-  display: block;
-  padding: 6px 12px;
-  text-decoration: none !important; }
-
-button, .success, .warning, .disabled, .info, .bright, .input--button[type="button"] {
-  transition: all .1s ease-in-out; }
-
-button, .success, .warning, .disabled, .info, .bright, .input--button[type="button"] {
-  background: #4f45aa;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 42px;
-  padding: 6px;
-  min-width: 80px;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-around;
-  cursor: pointer; }
-
-.button__icon {
-  border: 2px solid #4f45aa;
-  color: #4f45aa;
-  border-radius: 50%;
-  padding: 2px;
-  font-size: 20px;
-  display: inline-flex;
-  justify-content: center;
-  line-height: 24px;
-  cursor: pointer; }
-
-button:active {
-  transform: scale(1.05); }
-
-.success {
-  background-color: #1dca7f;
-  color: #FFFFFF; }
-
-.warning {
-  background-color: #ff3165;
-  color: #FFFFFF; }
-
-.disabled {
-  background-color: #D3D3D3;
-  color: #FFFFFF; }
-
-.info {
-  background-color: #4f87ec;
-  color: #FFFFFF; }
-
-.bright {
-  background-color: #ffc927;
-  color: #FFFFFF; }
-
-.subheading, button, .success, .warning, .disabled, .info, .bright, .input--button[type="button"], .input--inactive, .input--active, .input--error, .input--disabled {
-  font: Normal Normal 400 14px/150% 'Roboto', sans-serif;
-  margin: 0;
-  letter-spacing: -.02em; }
-
-.subheading {
-  color: #D3D3D3; }
-
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-
-li {
-  display: inline-block; }
-
-input, textarea, select, button {
-  outline: none; }
-
-a,
-a:hover,
-a:active {
-  display: block;
-  padding: 6px 12px;
-  text-decoration: none !important; }
-
-.input--inactive, .input--active, .input--error, .input--disabled {
-  background: transparent;
-  border: 2px solid #D3D3D3;
-  border-radius: 42px;
-  padding: 6px 12px; }
-
-.input--active {
-  border-color: #4f45aa; }
-
-.input--error {
-  border-color: #ff3165; }
-
-.input--disabled {
-  border-color: #D3D3D3;
-  background-color: #D3D3D3; }
-
-.subheading, button, .success, .warning, .disabled, .info, .bright, .input--button[type="button"], .input--inactive, .input--active, .input--error, .input--disabled {
-  font: Normal Normal 400 14px/150% 'Roboto', sans-serif;
-  margin: 0;
-  letter-spacing: -.02em; }
-
-.subheading {
-  color: #D3D3D3; }
-
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-
-li {
-  display: inline-block; }
-
-input, textarea, select, button {
-  outline: none; }
-
-a,
-a:hover,
-a:active {
-  display: block;
-  padding: 6px 12px;
-  text-decoration: none !important; }
-
-button, .success, .warning, .disabled, .info, .bright, .input--button[type="button"] {
-  transition: all .1s ease-in-out; }
-
-button, .success, .warning, .disabled, .info, .bright, .input--button[type="button"] {
-  background: #4f45aa;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 42px;
-  padding: 6px;
-  min-width: 80px;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-around;
-  cursor: pointer; }
-
-.button__icon {
-  border: 2px solid #4f45aa;
-  color: #4f45aa;
-  border-radius: 50%;
-  padding: 2px;
-  font-size: 20px;
-  display: inline-flex;
-  justify-content: center;
-  line-height: 24px;
-  cursor: pointer; }
-
-button:active {
-  transform: scale(1.05); }
-
-.success {
-  background-color: #1dca7f;
-  color: #FFFFFF; }
-
-.warning {
-  background-color: #ff3165;
-  color: #FFFFFF; }
-
-.disabled {
-  background-color: #D3D3D3;
-  color: #FFFFFF; }
-
-.info {
-  background-color: #4f87ec;
-  color: #FFFFFF; }
-
-.bright {
-  background-color: #ffc927;
-  color: #FFFFFF; }
-
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-
-li {
-  display: inline-block; }
-
-input, textarea, select, button {
-  outline: none; }
-
-a,
-a:hover,
-a:active {
-  display: block;
-  padding: 6px 12px;
-  text-decoration: none !important; }
-
-.container h2 {
-  color: #FFFFFF; }
-
-.heading-fancy {
-  background-color: #4f45aa; }
-
-/*# sourceMappingURL=home.component.css.map */
+Backtrace:
+../../stylesheets/partials/_forms.scss:2
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/extend.rb:56:in `block in check_extends_fired!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/util/subset_map.rb:105:in `block in each_value'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/util/subset_map.rb:105:in `each'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/util/subset_map.rb:105:in `each_value'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/extend.rb:51:in `check_extends_fired!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/visitors/extend.rb:16:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:39:in `css_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.6/bin/scss:13:in `<top (required)>'
+C:/Ruby25-x64/bin/scss:23:in `load'
+C:/Ruby25-x64/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Sass::SyntaxError: \"%input-shared\" failed to @extend \"%font-shared\".\A The selector \"%font-shared\" was not found.\A Use \"@extend %font-shared !optional\" if the extend should be able to fail.\A "; }

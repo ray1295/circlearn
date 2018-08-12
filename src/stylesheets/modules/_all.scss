@@ -1,16 +1,4 @@
-/* Sass code that doesn't cause sass to output css
-   i.e. mixin declarations, functions and variables
- */
-
-// Modules and Variables
-@import "../modules/colors";
-
-// Partials
-@import "../partials/reset";
-@import "../partials/typography";
-@import "../partials/buttons";
-@import "../partials/figures";
-@import "../partials/grids";
+/* Sass code that doesn't cause sass to output css i.e. mixin declarations, functions and variables */
 
 .wrap {
   padding : 2em;
@@ -18,7 +6,7 @@
 }
 
 .container {
-  background-color: $color-primary--light;
+  background-color: $background-color;
   display: grid;
   grid-template-columns: 50% auto;
 }

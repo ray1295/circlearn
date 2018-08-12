@@ -1,14 +1,32 @@
+/* Primary Sass file */
+
+// Modules and Variables
 @import "stylesheets/modules/colors";
 @import "stylesheets/modules/all";
+@import "stylesheets/modules/utility";
+
+// Partials
+@import "stylesheets/partials/reset";
 @import "stylesheets/partials/typography";
+@import "stylesheets/partials/buttons";
+@import "stylesheets/partials/figures";
+@import "stylesheets/partials/grids";
+@import "stylesheets/partials/forms";
+@import "stylesheets/partials/base";
+
+// Third-party
+@import "stylesheets/vendor/colorpicker";
+@import "stylesheets/vendor/jquery.ui.core";
 @import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
 
+//// Components SCSS
+@import "app/login-form/login-form.component.scss";
+
+// Styles
 html, body {
   height: 100%;
-}
-
-html {
   display: block;
+
 }
 
 body {
@@ -19,4 +37,8 @@ body {
   margin: 0 auto;
   display: block;
   color: $text-color;
+}
+
+* {
+  box-sizing: border-box;
 }

@@ -1,36 +1,79 @@
-@import "../modules/colors";
-@import "buttons";
-@import "typography";
-@import "reset";
-
 %input-shared {
   @extend %font-shared;
   background: transparent;
-  border: 2px solid $color-less;
-  border-radius: 42px;
-  padding: 6px 12px;
+  border: 1px solid $color-less;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  min-height: 34px;
+  padding: 6px 8px;
+  vertical-align: middle;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 2px rgba(27,31,35,0.075);
 }
 
-.input--inactive {
+.auth-form {
+  width: 340px;
+  margin: 0 auto;
+}
+
+.auth-form--header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.auth-form--img {
+  width: 48px;
+  height: 48px;
+  margin: 32px 0 24px 0;
+}
+
+.auth-form--body {
+  display:block;
+  background-color: $color-white;
+  border: 1px solid $color-less;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.auth-form--body label  {
+  display: block;
+  margin-bottom: 7px;
+}
+
+.auth-form--body input {
   @extend %input-shared;
 }
 
-.input--active {
-  @extend %input-shared;
-  border-color: $color-primary;
+input[type="text"]:valid {
+  border-color: $color-go;
 }
 
-.input--error {
-  @extend %input-shared;
+input[type="text"]:invalid {
   border-color: $color-destructive;
 }
 
-.input--disabled {
-  @extend %input-shared;
-  border-color: $color-less;
-  background-color: $color-less;
-}
+/* field value is valid */
+.ng-valid {}
 
-.input--button[type="button"] {
-  @extend %button-shared;
-}
+/* field value is invalid */
+.ng-invalid {}
+
+/* field has not been clicked in, tapped on, or tabbed over */
+.ng-untouched {}
+
+/* field has been previously entered */
+.ng-touched {}
+
+/* field value is unchanged from the default value */
+.ng-pristine {}
+
+/* field value has been modified from the default */
+.ng-dirty {}
+
+/* field has been unvisited and unchanged */
+input.ng-untouched.ng-pristine {}
+
+/* field has been previously visited, and is invalid */
+input.ng-touched.ng-invalid {}
+

@@ -21,3 +21,33 @@
     <p *ngFor="let subject of subjects; let i = index" (click)="removeSubject(i)"> {{subject}}</p>
   </div>
 </div>
+
+
+<h1>Our favourite subject: {{favSubject.name}}</h1>
+<hr>
+<h3>subjects:</h3>
+<ul>
+  <li *ngFor="let subject of subjects">
+    {{subject.name}}
+  </li>
+</ul>
+
+<p *ngIf="subjects.length > 3">There are many heroes!</p>
+<p>Sum of 1 + 1 is {{1 + 1}}</p>
+
+<button class=" success ">Button</button>
+<button class=" warning ">Button</button>
+<button class=" disabled ">Button</button>
+<button>Button</button>
+<button class=" bright ">Button</button>
+<button class=" info ">Button</button>
+
+<br>
+
+<br>
+
+<input class="input--active" aria-label="search" placeholder="Search" type="search">
+<input class="input--inactive" aria-label="inactive" placeholder="Search" type="text">
+<input class="input--disabled" aria-label="disabled" placeholder="Can't touch this" type="text">
+<input class="input--error" aria-label="error" placeholder="This is an error explanation" type="text">
+<input class="input--button" value="button" type="button">
