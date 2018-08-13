@@ -18,6 +18,7 @@ export class LoginFormComponent implements OnInit {
 
   password = new FormControl('', [
     Validators.required,
+    this.hasPunctuation('&', 'ampersandRequired')
   ]);
 
   loginForm: FormGroup = this.builder.group({
@@ -32,9 +33,12 @@ export class LoginFormComponent implements OnInit {
     // Attempt logging in...
   }
 
-   hasExclamationMark(input: FormControl) {
-    const hasExclamation = input.value.indexOf('!') >= 0;
-    return hasExclamation ? null : { needsExclamation: true };
+  hasPunctuation(punctuation: string, errorType: string) {
+    return (input: FormControl) => {
+      return input.value.indexOf(punctuation) >= 0 ?
+        null :
+        { [errorType]: true };
+    };
   }
 
 }

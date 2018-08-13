@@ -1,0 +1,23 @@
+  .footer-block {
+    display: block;
+    padding: 0 24px;
+    border-top: 1px solid $color-less;
+    line-height: 70px;
+    margin-top: 50px;
+    color: $color-white;
+    background-color: $color-dark-less;
+  }
+  .footer-block__content {
+    position: relative;
+    float: right;
+  }
+  .footer-block__content ul {
+    margin-right: 10px;
+  }
+  .footer-block__legal-nav-item {
+    display: inline-block;
+    margin: 0 8px;
+    a {
+      color: $color-white;
+    }
+  }

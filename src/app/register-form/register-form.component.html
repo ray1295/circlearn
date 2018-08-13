@@ -1,3 +1,74 @@
-<p>
-  register-form works!
-</p>
+<div *ngIf="!name; else forminfo">
+
+  <form [formGroup]="rForm" (ngSubmit)="addPost(rForm.value)">
+
+    <div class="register-form--container">
+
+      <h1>Join CircLearn</h1>
+      <h4>The best way to stay on top on things.</h4>
+
+      <ul class="register-steps">
+        <li class="register-steps--container">
+          <i class="far fa-user-circle"></i>
+          <strong>Step 1:</strong>
+          Create account
+        </li>
+        <li class="register-steps--container">
+          <i class="fas fa-book-reader"></i>
+          <strong>Step 2:</strong>
+          Select course
+        </li>
+        <li class="register-steps--container">
+          <i class="fas fa-sliders-h"></i>
+          <strong>Step 3:</strong>
+          Choose your plan
+        </li>
+      </ul>
+
+      <h4>Create your personal account</h4>
+      <div class="form-group">
+      <label>Name<input type="text" formControlName="name"></label>
+      <span class="form-span">This will be your username.</span>
+      <div class="auth-error" *ngIf="!rForm.controls['name'].valid && rForm.controls['name'].touched">{{ authAlert }}</div>
+      </div>
+
+      <div class="form-group">
+      <label>Email address<input type="text" formControlName="name"></label>
+      <span class="form-span">This will be your username.</span>
+      <div class="auth-error" *ngIf="!rForm.controls['name'].valid && rForm.controls['name'].touched">{{ authAlert }}</div>
+      </div>
+
+      <div class="form-group">
+      <label>Password<input type="text" formControlName="name"></label>
+      <span class="form-span">Use at least one lowercase letter, one numeral and a minimum og 7 characters.</span>
+      <div class="auth-error" *ngIf="!rForm.controls['name'].valid && rForm.controls['name'].touched">{{ authAlert }}</div>
+      </div>
+
+      <div class="form-group">
+      <label>Confirm password<input type="text" formControlName="name"></label>
+      <span class="form-span">This will be your username.</span>
+      <div class="auth-error" *ngIf="!rForm.controls['name'].valid && rForm.controls['name'].touched">{{ authAlert }}</div>
+      </div>
+
+      <label>Description<textarea  formControlName="description"></textarea></label>
+      <span class="form-span">This will be your username.</span>
+      <div class="auth-error" *ngIf="!rForm.controls['description'].valid && rForm.controls['description'].touched">You must specify a description that's between 10 and 100 characters.</div>
+
+      <hr>
+
+      <p>By clicking “Create an account” below, you agree to our terms of service and privacy statement. We’ll occasionally send you account related emails</p>
+
+      <button type="submit" class="expanded" value="Submit Form" [disabled]="!rForm.valid">Create an account</button>
+
+    </div>
+
+  </form>
+
+</div>
+
+<ng-template #forminfo>
+  <div class="form-container">
+    <h1>{{ name }}</h1>
+    <p>{{ description }}</p>
+  </div>
+</ng-template>

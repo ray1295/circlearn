@@ -1,8 +1,20 @@
+.auth-forgot-password {
+  float: right;
+  padding: 0;
+}
+
 .create-acc {
   margin-top: 16px;
   border: 1px solid $color-less;
-  padding: 10px 20px;
+  padding: 16px 20px;
   text-align: center;
   border-radius: 5px;
   display: block;
 }
+
+.auth-form-button {
+  width: 100%;
+  padding: 10px 6px;
+  margin-top: 10px;
+}
+
