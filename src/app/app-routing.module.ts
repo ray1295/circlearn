@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LoginFormComponent } from './login-form/login-form.component';
-import { RegisterFormComponent } from './register-form/register-form.component';
+import { RegisterComponent } from './register/register.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { TimetableComponent } from './timetable/timetable.component';
@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'profile/:id', component: ProfileComponent },
   { path: 'login', component: LoginFormComponent },
-  { path: 'register', component: RegisterFormComponent },
+  { path: 'register', component: RegisterComponent },
   { path: 'calendar', component: CalendarComponent },
   { path: 'timer', component: TimerComponent },
   { path: 'blog', component: BlogComponent },
@@ -33,7 +33,7 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 
-export const RoutingComponents = [HomeComponent, ProfileComponent, LoginFormComponent, RegisterFormComponent,
+export const RoutingComponents = [HomeComponent, ProfileComponent, LoginFormComponent, RegisterComponent,
   CalendarComponent,
   TimerComponent,
   BlogComponent,
