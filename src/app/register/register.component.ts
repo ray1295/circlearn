@@ -28,7 +28,9 @@ export class RegisterComponent implements OnInit {
   }
   ngOnInit() {
     this._registeredService.getRegistered()
-      .subscribe(data => this.registered = data);
+      .subscribe(data => this.registered = data, error => {
+        console.log(error);
+      });
   }
 
 }
