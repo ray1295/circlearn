@@ -1,23 +1,16 @@
-  .footer-block {
-    display: block;
-    padding: 0 24px;
-    border-top: 1px solid $color-less;
-    line-height: 70px;
-    margin-top: 50px;
-    color: $color-white;
-    background-color: $color-dark-less;
+.footer-container {
+  display: block;
+  bottom: 20px;
+  position: absolute;
+  padding-right: 30px;
+  a {
+    margin-right: 8px
   }
-  .footer-block__content {
-    position: relative;
-    float: right;
+  .copyright {
+    padding: 20px 0;
+    font-weight: bold;
   }
-  .footer-block__content ul {
-    margin-right: 10px;
+  div {
+    padding: 20px 0 0 0;
   }
-  .footer-block__legal-nav-item {
-    display: inline-block;
-    margin: 0 8px;
-    a {
-      color: $color-white;
-    }
-  }
+}

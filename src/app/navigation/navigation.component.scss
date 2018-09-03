@@ -4,17 +4,15 @@
 
 .header {
   padding: 1.5rem 0;
-  position: fixed;
-  top: 0;
+  position: relative;
   width: 100%;
-  background: #fff;
-  z-index: 9;
+  margin-bottom: 2%;
 }
 .header-container {
   max-width: 1170px;
   margin: 0 auto;
 }
-.site-logo {
+.landing-logo {
   height: 44px;
   line-height: 44px;
   position: relative;
@@ -22,6 +20,6 @@
 .fill-space {
   flex: 1 1 auto;
 }
-.or-seperate {
-  margin: 0 5px;
+.mat-toolbar {
+  background: transparent;
 }

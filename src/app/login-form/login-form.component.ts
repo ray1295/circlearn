@@ -3,22 +3,26 @@ import {Validators, FormBuilder, FormControl, FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'app-login-form',
-  templateUrl: './login-form.component.html'
+  templateUrl: './login-form.component.html',
   // styleUrls: ['./login-form.component.scss']
 })
 
 export class LoginFormComponent implements OnInit {
+  checked = false;
+  hide = true;
 
   constructor(private builder: FormBuilder) {
   }
+  emailFormControl = new FormControl('', [
+    Validators.required,
+    Validators.email,
+  ]);
   username = new FormControl('', [
     Validators.required,
     Validators.minLength(5)
   ]);
-
   password = new FormControl('', [
     Validators.required,
-    this.hasPunctuation('&', 'ampersandRequired')
   ]);
 
   loginForm: FormGroup = this.builder.group({
@@ -33,12 +37,4 @@ export class LoginFormComponent implements OnInit {
     // Attempt logging in...
   }
 
-  hasPunctuation(punctuation: string, errorType: string) {
-    return (input: FormControl) => {
-      return input.value.indexOf(punctuation) >= 0 ?
-        null :
-        { [errorType]: true };
-    };
   }
-
-}

@@ -6,15 +6,20 @@ import {RegisteredService} from './register.service';
 @Component({
   selector: 'app-register-form',
   templateUrl: './register.component.html',
-  // styleUrls: ['./register.component.scss']
+  styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent implements OnInit {
-    public registered = [];
+
+  firstFormGroup: FormGroup;
+  secondFormGroup: FormGroup;
+  isOptional = false;
+
+  //   public registered = [];
     rForm: FormGroup;
-    post: any;  // A property off our submitted form
-    description = '';
-    name = '';
-    authAlert = 'This field is required';
+  //   post: any;  // A property off our submitted form
+  //   description = '';
+  //   name = '';
+  //   authAlert = 'This field is required';
   constructor(private fb: FormBuilder, private _registeredService: RegisteredService ) {
     this.rForm = fb.group({
       'name': [null, Validators.required],
@@ -22,15 +27,21 @@ export class RegisterComponent implements OnInit {
     });
   }
 
-  addPost(post) {
-    this.description = post.description;
-    this.name = post.name;
-  }
+  // addPost(post) {
+  //   this.description = post.description;
+  //   this.name = post.name;
+  // }
   ngOnInit() {
-    this._registeredService.getRegistered()
-      .subscribe(data => this.registered = data, error => {
-        console.log(error);
-      });
+    // this._registeredService.getRegistered()
+    //   .subscribe(data => this.registered = data, error => {
+    //     console.log(error);
+    //   });
+    this.rForm = this.fb.group({
+      firstCtrl: ['', Validators.required]
+    });
+    this.secondFormGroup = this.fb.group({
+      secondCtrl: ''
+    });
   }
 
 }

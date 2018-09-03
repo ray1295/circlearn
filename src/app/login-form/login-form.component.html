@@ -1,36 +1,56 @@
 <div class="auth-form">
 
-  <div class="auth-form--header">
-    <img class="auth-form--img" src="../../assets/images/circlearn-logo.png" />
-    <h2>Sign in to CircLearn</h2>
-  </div>
-
   <form class="auth-form--body" [formGroup]="loginForm" (ngSubmit)="login()">
+    <h3 class="mg-b-30">Welcome to Circlearn</h3>
 
-    <label for="username">Username or email address</label>
-    <input type="text" name="username" id="username" [formControl]="username">
+    <!-- Email input -->
+    <label class="mg-b-10">Email or Username</label>
+    <mat-form-field appearance="outline">
+      <input matInput [formControl]="emailFormControl">
+      <!-- <input matInput type="text" name="username" id="username" [formControl]="username"> -->
+      <!-- Email error message -->
+      <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+        Please enter a valid email address.
+      </mat-error>
+      <mat-error *ngIf="emailFormControl.hasError('required')">
+        Email or Username is required.
+      </mat-error>
+    </mat-form-field>
 
-    <div [hidden]="username.valid || username.untouched">
-      <div class="auth-error" [hidden]="!username.hasError('minlength')"> Username can not be shorter than 5 characters.</div>
-      <div class="auth-error" [hidden]="!username.hasError('required')"> Username is required. </div>
+    <!-- Paaword input -->
+    <label class="mg-b-10">Password</label>
+    <mat-form-field appearance="outline">
+        <input matInput name="password" id="password" [type]="hide ? 'password' : 'text'" [formControl]="password">
+        <!-- Display password-->
+        <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+        <!-- Password error message-->
+        <mat-error *ngIf="password.hasError('password') && !password.hasError('required')">
+            A password is required.
+        </mat-error>
+        <mat-error *ngIf="password.hasError('required')">
+            A password is required.
+        </mat-error>
+    </mat-form-field>
+
+    <!-- Remember User checkbox-->
+    <div class="mg-b-30">
+        <mat-checkbox [(ngModel)]="checked" [ngModelOptions]="{standalone: true}"><p>Remeber me</p></mat-checkbox>
     </div>
 
-    <br>
+    <!-- Sign User in button-->
+    <button mat-stroked-button type="submit" [disabled]="!loginForm.valid">Sign in</button>
+    
+    
+    <!-- Forgotten Password-->
+    <h5 class="mg-t-20 txt-c">Forgotten your <a href="">Email</a> or <a href="">Password</a>?</h5>
 
-    <label for="password">Password <a class="auth-forgot-password" href="">Forgot password?</a></label>
-    <input type="password" name="password" id="password" [formControl]="password">
+    <hr>
 
-    <div [hidden]="password.valid || password.untouched">
-      <div class="auth-error" [hidden]="!password.hasError('required')">The password is required.</div>
-      <div class="auth-error" [hidden]="!password.hasError('ampersandRequired')">You must have an &amp; in your password.</div>
-    </div>
-
-    <br>
-
-    <button class="auth-form-button" type="submit" [disabled]="!loginForm.valid">Sign in</button>
+    <h5 class="mg-b-20 txt-c">Don't have a Circlearn account?</h5>
+    
+    <!-- Register button -->
+    <button mat-stroked-button><a routerLink="/register"></a>Register now</button>
 
   </form>
-
-  <p class="create-acc">New to CircLearn?  <a href=""> Create an account</a>.</p>
 
 </div>

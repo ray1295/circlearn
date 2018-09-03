@@ -16,8 +16,6 @@
   margin: 24px 0 30px;
   overflow: hidden;
   background: transparent;
-  border: 1px solid $color-less;
-  color: $color-less;
   border-radius: 5px;
   box-shadow: 0 1px 3px rgba(27,31,35,0.05);
 }
@@ -26,7 +24,6 @@
   display: table-cell;
   width: 33.3%;
   padding: 10px 15px;
-  border-left: 1px solid $color-less;
   strong {
     display: block;
   }
@@ -35,4 +32,8 @@
     margin-right: 25px;
     font-size: 42px
   }
+}
+
+.mat-stepper-horizontal {
+  background: transparent;
 }

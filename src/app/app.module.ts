@@ -16,6 +16,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatStepperModule } from '@angular/material/stepper';
 
 import { DataService } from './data.service';
 
@@ -51,7 +55,11 @@ import { SidenavigationComponent } from './sidenavigation/sidenavigation.compone
     MatTooltipModule,
     MatFormFieldModule,
     MatSelectModule,
-    MatInputModule
+    MatInputModule,
+    MatMenuModule,
+    MatToolbarModule,
+    MatCheckboxModule,
+    MatStepperModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

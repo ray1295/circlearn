@@ -20,17 +20,18 @@
 @import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
 
 // Components SCSS
+@import "app/home/home.component.scss";
 @import "app/login-form/login-form.component.scss";
-@import "app/register/register.component";
+@import "app/register/register.component.scss";
 @import "app/footer/footer.component.scss";
 @import "app/navigation/navigation.component.scss";
-
+@import "app/sidenavigation/sidenavigation.component.scss";
+@import "app/login-form/login-form.component.scss";
 
 // Styles
 html, body {
   height: 100%;
   display: block;
-
 }
 
 body {

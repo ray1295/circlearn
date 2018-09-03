@@ -1,6 +1,31 @@
-<app-navigation></app-navigation>
+<mat-sidenav-container class="sidenav-container ">
 
-<router-outlet></router-outlet>
-<!-- INFO: Router view goes here -->
+    <!-- Sidenav content -->
+    <mat-sidenav mode="side" opened>
+        <div class="site-logo">
+            <a routerLink="/home">
+                <img width="auto" height="30" src="../../assets/images/favicon.png" />
+                <span>Circlearn</span>
+            </a>
+        </div>
+        <a routerLink="/home" routerLinkActive="active" class="side-links">
+            <i class="material-icons">home</i>
+            Home
+        </a>
+        <a routerLink="/projects" routerLinkActive="active" class="side-links">
+            <i class="material-icons">assessment</i>
+            Assessment
+        </a>
+        <app-footer></app-footer>
+    </mat-sidenav>
 
-<app-footer></app-footer>
+    <!-- Body content -->
+    <mat-sidenav-content>
+        <!-- Navigation-->
+        <app-navigation></app-navigation>
+        <!-- Router view goes here -->
+        <router-outlet></router-outlet>
+        <!-- <app-footer></app-footer> -->
+    </mat-sidenav-content>
+
+</mat-sidenav-container>

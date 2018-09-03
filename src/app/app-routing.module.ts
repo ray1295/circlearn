@@ -16,8 +16,7 @@ import { SidenavigationComponent } from './sidenavigation/sidenavigation.compone
 
 
 const routes: Routes = [
-  { path: '', component: SidenavigationComponent },
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'profile/:id', component: ProfileComponent },
   { path: 'login', component: LoginFormComponent },
   { path: 'register', component: RegisterComponent },
@@ -29,8 +28,7 @@ const routes: Routes = [
   { path: 'calculator', component: CalculatorComponent },
   { path: 'grade', component: GradeComponent },
   { path: 'settings', component: SettingComponent },
-
-  ];
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
