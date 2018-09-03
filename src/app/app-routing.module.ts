@@ -11,10 +11,13 @@ import { TimerComponent } from './timer/timer.component';
 import { BlogComponent } from './blog/blog.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { GradeComponent } from './grade/grade.component';
+import { SettingComponent } from './setting/setting.component';
+import { SidenavigationComponent } from './sidenavigation/sidenavigation.component';
 
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: SidenavigationComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'profile/:id', component: ProfileComponent },
   { path: 'login', component: LoginFormComponent },
   { path: 'register', component: RegisterComponent },
@@ -24,7 +27,9 @@ const routes: Routes = [
   { path: 'timetable', component: TimetableComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'calculator', component: CalculatorComponent },
-  { path: 'grade', component: GradeComponent }
+  { path: 'grade', component: GradeComponent },
+  { path: 'settings', component: SettingComponent },
+
   ];
 
 @NgModule({
@@ -33,11 +38,17 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 
-export const RoutingComponents = [HomeComponent, ProfileComponent, LoginFormComponent, RegisterComponent,
+export const RoutingComponents = 
+[ HomeComponent, 
+  ProfileComponent, 
+  LoginFormComponent, 
+  RegisterComponent,
   CalendarComponent,
   TimerComponent,
   BlogComponent,
   TimetableComponent,
   ProjectsComponent,
   CalculatorComponent,
-  GradeComponent];
+  GradeComponent,
+  SidenavigationComponent,
+  SettingComponent];
