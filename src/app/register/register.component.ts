@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {RegisteredService} from './register.service';
+import * as User from '../interfaces/users'
 
 @Component({
   selector: 'app-register-form',
@@ -12,7 +13,7 @@ export class RegisterComponent implements OnInit {
 
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
-  isOptional = false;
+  isOptional: boolean = false;
 
   //   public registered = [];
     rForm: FormGroup;
@@ -20,11 +21,18 @@ export class RegisterComponent implements OnInit {
   //   description = '';
   //   name = '';
   //   authAlert = 'This field is required';
+
+  user: User.User;
+
   constructor(private fb: FormBuilder, private _registeredService: RegisteredService ) {
     this.rForm = fb.group({
       'name': [null, Validators.required],
       'description': [null, Validators.compose([Validators.required, Validators.minLength(10), Validators.maxLength(100)])],
     });
+  }
+
+  register() {
+    this._registeredService.getRegistered()
   }
 
   // addPost(post) {
